@@ -1,0 +1,173 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Neural Network</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1>Inteligência Artificial</h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<a href="index.html" accesskey="1" title=""><button class="dropbtn2">HOMEPAGE</button></a>
+				
+				<div class="dropdown">
+				  <button class="dropbtn">PROJETO</button>
+				  <div class="dropdown-content">
+					<a href="machine_learning.html"><font color="black">Machine Learning</font></a>
+					<a href="deep_learning.html"><font color="black">Deep Learning</font></a>
+					<a href="#"><font color="black">Neural Network</font></a>
+					<a href="visao_computacional.html"><font color="black">Visão Computacional</font></a>
+					<a href="cognitive_computing.html"><font color="black">Cognitive Computing</font></a>
+					<a href="natural_language_processing.html"><font color="black">Natural Language Processing</font></a>
+				  </div>
+				</div>
+
+				<div class="dropdown">
+				  <button class="dropbtn">EXTRAS</button>
+				  <div class="dropdown-content">
+					<a href="mais_informacao.html"><font color="black">Mais Informação</font></a>
+					<a href="empresas_ramo.html"><font color="black">Empresas do Ramo</font></a>
+					<a href="timeline.html"><font color="black">Timeline</font></a>
+					<a href="projeto.html"><font color="black">Projeto em PDF</font></a>
+				  </div>
+				</div>
+				
+				<a href="acerca.html" accesskey="3" title=""><button class="dropbtn2" style="margin-right: 260px;" >ACERCA</button></a></a>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="page-wrapper">
+	<div id="page2" class="container">
+		<h2>Neural Network</h2>
+		<p> A Deep Learning é a base da Neural Network e esta por si é um subcampo da
+			Machine Learning, os algoritmos usados na Neural Network são inspirados na
+			forma de pensar de um ser humano.<br />
+		</p>
+		
+		<br />
+		<img src="images/image3.png" width="470" height="210" class="center" />		
+		<center><font color="black">Figura 1: Os vários ramos da Inteligência Artificial.</font></center>
+		<br />
+		<br />
+		
+		<p>
+			<b>Como funciona?</b><br />
+			As Neural Networks são constituídas por ligações de camadas de Neurons, estes
+			são as unidades de processamento básicas da rede, estes irão conter um
+			valor entre 0 e 1. As camadas que formam as Neural Networks são a camada
+			de entrada onde são atribuídos valores aos Neurons, camada escondida é onde
+			são distinguidos os padrões e também o local onde são realizadas a maior parte
+			das computações e a camada de saída é onde são comparados valores dos Neurons
+			e é então dada uma resposta, sendo o Neuron com o valor mais alto.<br />	
+		</p>
+		
+		<br />
+		<img src="images/image4.png" width="165" height="300" class="center" />		
+		<center><font color="black">Figura 2: Cada bola representa um Neuron e as linhas representam as ligações
+		entre eles.</font></center>
+		<br />
+		<br />
+		
+		<p>	A passagem de informação entre os Neurons depende da sua ativação. A ativação
+			de um Neuron da camada seguinte depende do valor do Neuron e do
+			peso da ligação entre os vários Neurons da camada anterior que se ligam a um
+			Neuron da camada seguinte e da bias. O peso da ligação é um valor qualquer
+			que define um certo padrão. A bias é um valor que define quando é que o valor
+			de ativação do Neuron seguinte deve ter um um valor significativo (está ativo)
+			ou um valor insignificante (não está ativo).<br />
+			<br />
+			O valor da ativação do Neuron da camada seguinte é dado pelo somatório de
+			todos os Neurons da camada anterior ligado ao Neuron da camada seguinte a
+			multiplicar pelo peso das ligações mais a bias.<br />
+		</p>
+		
+		<br />
+		<img src="images/image5.png" width="165" height="215" class="center" />		
+		<center><font color="black">Figura 3: X1, X2...Xn correspondem ao valor dos Neurons e W1, W2. . .Wn
+		correspondem ao valor dos pesos das ligações e b corresponde a bias, f é o
+		valor da ativação.</font></center>
+		<br />
+		<br />
+		
+		<p>	Como o valor da ativação correspondem aos valores dos Neurons então este
+			valor terá que estar entre 0 e 1, pelo que se usa a função sigmoide que é uma
+			função que tem domínio R e contradomínio ]0,1[.<br />
+		</p>
+		
+		<br />
+		<img src="images/image6.png" width="320" height="150" class="center" />		
+		<center><font color="black">Figura 4: Função sigmoide.</font></center>
+		<br />
+		<br />
+		
+		<p>	Portanto o valor real da ativação será a sigmoide de f (somatório dos valores
+			dos Neurons da camada anterior x pesos das ligações ao Neuron da camada seguinte
+			+ bias), e assim sendo o valor do Neuron da camada seguinte será igual
+			ao valor real da ativação.<br />
+		</p>
+		
+		<br />
+		<img src="images/image7.png" width="385" height="100" class="center" />		
+		<center><font color="black">Figura 5: Formula do valor do Neuron seguinte.</font></center>
+		<br />
+		<br />
+		
+		<p>	Este processo vai ser repetido para todos os Neurons da camada seguinte, depois
+			os dessa camada irão passar pelo mesmo processo e assim sucessivamente
+			até chegar à camada de saída, onde serão comparados os Neurons e o Neuron
+			com o valor mais alto será a resposta.<br />
+			<br />
+			Até agora explicamos a propagação direta (como é que esta rede se comporta)
+			mas a seguir vamos abordar a propagação de volta (a como é que esta aprende).<br />
+			<br />
+			<b>Treinando a Neural Network</b><br />
+			As Neural Networks têm de ser treinadas, o treino destas é feito por um método
+			de tentativa-erro onde os dados inseridos na camada de entrada já têm
+			uma resposta associada (resposta real). Depois na camada de saída os valores
+			dos Neurons serão comparados com os valores da resposta real. Se os valores
+			estiverem coretos então a nossa Neural Network está treinada, caso contrário
+			iremos ter o processo de propagação de volta.<br />
+			<br />
+			Este processo consiste em comparar os valores reais aos valores dos Neurons
+			da camada de saída, sendo estes diferentes a rede irá calcular o seu erro subtraindo
+			o valor real ao valor dos Neurons da camada de saída. Na figura 6
+			podemos observar que a cada Neuron da camada de saída corresponde uma
+			resposta final e neste caso a rede escolheu o quadrado (por ser o Neuron com
+			valor mais alto), mas a resposta certa era o círculo, logo a seguir a rede calcula
+			o seu erro estes valores estão sempre entre 0 e 1 para poderem representar o
+			nível de certeza que a rede tem da sua resposta ou para verificar se o erro foi
+			grave ou não, no exemplo seguinte verificamos que a rede tinha 50% de certeza
+			da sua resposta (0.5 x 100).<br />
+		</p>
+		
+		<br />
+		<img src="images/image8.png" width="200" height="375" class="center" />		
+		<center><font color="black">Figura 6: Exemplo de calcular o erro na Neural Network.</font></center>
+		<br />
+		<br />
+		
+		<p>	A partir do valor do erro a rede começa a andar no sentido contrário (propagação
+			de volta), alterando os valores dos pesos das ligações consoante os valores
+			de erro obtidos. Depois disto a rede irá voltar a aplicar a propagação direta,
+			chegando ao fim verifica se houve erros e se houver volta a repetir este processo
+			o número de vezes necessário até que as respostas estejam corretas.<br />
+			Este processo de tentativa-erro pode demorar dias ou até mesmo meses até que
+			a Neural Network fique treinada.<br />	
+		</p>
+		
+	</div>
+</div>
+</body>
+</html>
