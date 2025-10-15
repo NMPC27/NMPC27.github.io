@@ -26,7 +26,7 @@ export default function Navbar(props) {
           <li><a href="/#skills" onClick={() => props.handleSetPage(null)} className="text-white hover:text-pink-600">SKILLS</a></li>
           <li><a href="/#education" onClick={() => props.handleSetPage(null)} className="text-white hover:text-pink-600">EDUCATION</a></li>
           <li><a href="/projects" onClick={() => props.handleSetPage("projects")} className="text-white hover:text-pink-600">PROJECTS</a></li>
-          <li><a href="/blog" target="_blank" className="text-white hover:text-pink-600">DESKTOP</a></li>
+          <li><a href="https://nmpc27.github.io/win95-site/" className="text-white hover:text-pink-600">DESKTOP</a></li>
         </ul>
       </div>
 
@@ -38,7 +38,7 @@ export default function Navbar(props) {
             <li><a href="/#skills" onClick={() => { props.handleSetPage(null); setMenuOpen(false); }} className="text-white hover:text-pink-600">SKILLS</a></li>
             <li><a href="/#education" onClick={() => { props.handleSetPage(null); setMenuOpen(false); }} className="text-white hover:text-pink-600">EDUCATION</a></li>
             <li><a href="/projects" onClick={() => { props.handleSetPage("projects"); setMenuOpen(false); }} className="text-white hover:text-pink-600">PROJECTS</a></li>
-            <li><a href="/blog" target="_blank" className="text-white hover:text-pink-600">DESKTOP</a></li>
+            <li><a href="https://nmpc27.github.io/win95-site/" className="text-white hover:text-pink-600">DESKTOP</a></li>
           </ul>
         </div>
       )}
